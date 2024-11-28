@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher's App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Teacher's Student Profile and Lesson Plan Generator</h1>
+    </header>
+
+    <main>
+        <!-- Student Profile Section -->
+        <section id="student-profile" aria-labelledby="student-profile-heading">
+            <h2 id="student-profile-heading">Create Student Profile</h2>
+            <form id="student-form">
+                <label for="student-name">Student Name:</label>
+                <input type="text" id="student-name" placeholder="Enter student's name" required><br>
+
+                <label for="student-grade">Grade Level:</label>
+                <input type="text" id="student-grade" placeholder="Enter grade level" required><br>
+
+                <label for="student-iep">IEP Accommodations:</label>
+                <textarea id="student-iep" rows="4" placeholder="Describe accommodations" required></textarea><br>
+
+                <button type="submit">Create Profile</button>
+            </form>
+        </section>
+
+        <!-- Lesson Plan Section -->
+        <section id="lesson-plan" aria-labelledby="lesson-plan-heading">
+            <h2 id="lesson-plan-heading">Generate Targeted Lesson Plan</h2>
+            <form id="lesson-form">
+                <label for="group-level">Select Group Level:</label>
+                <select id="group-level" required>
+                    <option value="foundational">Foundational</option>
+                    <option value="developing">Developing</option>
+                    <option value="proficient">Proficient</option>
+                    <option value="advanced">Advanced</option>
+                </select><br>
+
+                <label for="lesson-focus">Focus Area:</label>
+                <textarea id="lesson-focus" rows="3" placeholder="Enter focus area" required></textarea><br>
+
+                <button type="submit">Generate Lesson Plan</button>
+            </form>
+            <div id="lesson-output" aria-live="polite"></div>
+        </section>
+
+        <!-- AI Consultation Section -->
+        <section id="ai-consultation">
+            <h2>AI Consultation for Lesson Plan</h2>
+            <button id="consult-ai">Get AI Recommendations</button>
+            <div id="ai-output" aria-live="polite"></div>
+        </section>
+
+        <!-- AI Feedback Section -->
+        <section id="ai-feedback">
+            <h2>Provide Feedback on AI</h2>
+            <form id="ai-feedback-form">
+                <textarea id="ai-feedback" rows="3" placeholder="Enter feedback" required></textarea><br>
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Teacher's App. All Rights Reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
