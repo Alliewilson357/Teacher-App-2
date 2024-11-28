@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+input, textarea, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#lesson-output, #ai-output {
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+}
+
+
