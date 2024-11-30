@@ -64,7 +64,22 @@
                 <button type="submit">Submit Feedback</button>
             </form>
         </section>
-    </main>
+    </main><section id=“classroom-section” aria-labelledby=“classroom-heading”>
+    <h2 id=“classroom-heading”>Manage Classrooms</h2>
+    <form id=“classroom-form”>
+        <label for=“classroom-name”>Classroom Name:</label>
+        <input type=“text” id=“classroom-name” placeholder=“e.g., Period 1, 6th Grade Reading” required>
+        <button type=“submit”>Create Classroom</button>
+    </form>
+
+    <h3>Select Classroom</h3>
+    <select id=“classroom-selector”>
+        <option value=“” disabled selected>Select a classroom</option>
+    </select>
+
+    <h3>Students in Classroom</h3>
+    <div id=“student-list”></div>
+</section> 
 
     <footer>
         <p>&copy; 2024 Teacher's App. All Rights Reserved.</p>
